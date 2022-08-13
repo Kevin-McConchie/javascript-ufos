@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.1.0/math.min.js"></script>    
+    <link rel="stylesheet" href="static/style.css">
+    <title>UFO-level-2</title>
+</head>
+<body>
+    <div class="wrapper">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">UFO Sightings
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="hero text-center">
+        <h1>UFO Sightings</h1>
+        <p>I WANT TO BELIEVE</p>
+      </div>
+      <div class="container">
+        <div class="row margin-top-50">
+          <div class="col-md-2">
+            <aside class="filters">
+              <div class="panel panel-default">
+                <div class="panel-heading">Filter Search</div>
+                <div class="panel-body">
+                  <form>
+                    <div class="form-group">
+                      <ul class="list-group" id="filters">
+                        <li class="filter list-group-item">
+                          <label for="date">Enter Date</label>
+                          <input class="form-control" id="datetime" type="text" placeholder="1/1/2010">
+                        </li>
+                        <li class="filter list-group-item">
+                          <label for="city">Enter City</label>
+                          <input class="form-control" id="city" type="text" placeholder="san diego">
+                        </li>
+                        <li class="filter list-group-item">
+                          <label for="state">Enter State</label>
+                          <input class="form-control" id="state" type="text" placeholder="ca">
+                        </li>
+                        <li class="filter list-group-item">
+                          <label for="country">Enter Country</label>
+                          <input class="form-control" id="country" type="text" placeholder="us">
+                        </li>
+                        <li class="filter list-group-item">
+                          <label for="shape">Enter Shape</label>
+                          <input class="form-control" id="shape" type="text" placeholder="sphere">
+                        </li>
+                      </ul>
+                    </div>
+                    <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+                  </form>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="col-md-10">
+            <div id="table-area" class="">
+              <table id="ufo-table" class="table table-striped">
+                <thead>
+                  <tr>
+                    <th class="col">Date</th>
+                    <th class="col">City</th>
+                    <th class="col">State</th>
+                    <th class="col">Country</th>
+                    <th class="col">Shape</th>
+                    <th class="col">Duration</th>
+                    <th class="col">Comments</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <script src="./static/data.js"></script>
+      <script src="./static/app.js"></script>
+</body>
+</html>
