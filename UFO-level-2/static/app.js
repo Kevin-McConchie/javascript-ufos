@@ -10,6 +10,7 @@ tableData.forEach(function(sighting){
     console.log(sighting);
 });
 
+
 // Use d3 to update cells text with sightings information
 tableData.forEach(function(sighting) {
     console.log(sighting);
@@ -49,19 +50,19 @@ var shape = d3.select("#shape").property("value").toLowerCase();
 
 // create search result variable for each field
 
-// if (dateTime)
+if (dateTime)
 var searchResult = tableData.filter(result => result.datetime === dateTime);
 
-// if (country)
+if (country)
 var searchResult = tableData.filter(result => result.country === country);
 
-// if (state)
+if (state)
 var searchResult = tableData.filter(result => result.state === state);
 
-// if (city)
+if (city)
 var searchResult = tableData.filter(result => result.city === city);
 
-// if (shape)
+if (shape)
 var searchResult = tableData.filter(result => result.shape === shape);
 
 // Check results

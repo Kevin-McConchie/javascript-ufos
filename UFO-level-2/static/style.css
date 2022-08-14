@@ -1,20 +1,29 @@
 /* Adjust page refresh/ brand box */
 .navbar-brand{min-height: 50px;
     padding: 10px;
-    margin: -10px;
-    margin-left: 10px;
-    /* font-weight: 750; */
-    font-size: 30px;
+    /* margin: -10px;
+    margin-left: 10px; */
+    font-weight: 450;
+    font-size: 40px;
     color: #000000;
-    background-color: rgb(211, 215, 237);
+    background-color: rgb(175, 175, 175, 0.4);
     }
 
 
 /* set background color*/
-body {  background: #f0f0f9;
+body {  background:  rgb(175, 175, 175, 0.2);
 }
 
 .list-group-item{
-    background-color: rgb(254, 254, 254) !important;
- border-color: #000000;
+    background-color: rgba(175, 175, 175, 0.4);
+    border-color: #00000085;
+    border-width: 3px
+}
+
+.table-striped{
+    background-color: rgb(175, 175, 175, 0.1);
+}
+
+.btn-dark{ margin: 10px;
+
 }
