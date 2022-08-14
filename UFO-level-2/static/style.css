@@ -1,11 +1,20 @@
+/* Adjust page refresh/ brand box */
 .navbar-brand{min-height: 50px;
-    padding: 20px;
+    padding: 10px;
     margin: -10px;
     margin-left: 10px;
     /* font-weight: 750; */
     font-size: 30px;
     color: #000000;
-    background-color: rgb(227, 227, 227);
+    background-color: rgb(211, 215, 237);
     }
 
-    
+
+/* set background color*/
+body {  background: #f0f0f9;
+}
+
+.list-group-item{
+    background-color: rgb(254, 254, 254) !important;
+ border-color: #000000;
+}
