@@ -34,7 +34,7 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 * Use a date form in your HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
 
-### Level 2: Multiple Search Categories (Optional)
+### Level 2: Multiple Search Categories (Optional) - My oringinal attempt
 
 * Complete all of Level 1 criteria.
 
@@ -48,6 +48,7 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 - - -
 
+### Level 2: Multiple Search Categories (Optional) - My clean up of the app code and a single field search
 ### Dataset
 
 * [UFO Sightings Data](StarterCode/static/js/data.js)

@@ -13,7 +13,7 @@ function filterTable(searchTerm) {
   // Filter the tableData based on the search term
   var searchResult = tableData.filter(function (result) {
     for (var key in result) {
-      if (result[key].toLowerCase().includes(searchTerm)) {
+      if (result[key].toString().toLowerCase().includes(searchTerm)) {
         return true;
       }
     }
@@ -22,6 +22,7 @@ function filterTable(searchTerm) {
 
   // Repopulate the table with search results
   searchResult.forEach(function (result) {
+    console.log(result);
     var row = tbody.append("tr");
     Object.entries(result).forEach(function ([key, value]) {
       var cell = row.append("td");
